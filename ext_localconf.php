@@ -9,7 +9,7 @@ call_user_func(
             'SebastianChristoph.sc_chat',
             'chat',
             [
-                'chat' => 'chat'
+                'Chat' => 'chat'
             ],
             // non-cacheable actions
             [
@@ -23,7 +23,7 @@ call_user_func(
             wizards.newContentElement.wizardItems.plugins {
                 elements {
                     chat {
-                        iconIdentifier = sc_chat-plugin-feuserlist
+                        iconIdentifier = sc_chat-plugin-chat
                         title = LLL:EXT:sc_chat/Resources/Private/Language/locallang_db.xlf:tx_sc_chat_chat.name
                         description = LLL:EXT:sc_chat/Resources/Private/Language/locallang_db.xlf:tx_sc_chat_chat.description
                         tt_content_defValues {

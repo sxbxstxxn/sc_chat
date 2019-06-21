@@ -31,7 +31,7 @@ class ChatController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      *
      * @return void
      */
-    public function listAction()
+    public function chatAction()
     {
         $pluginUsergroups = $this->settings['usergroups'];
         $pluginUserPIDs = $this->settings['userPIDs'];
