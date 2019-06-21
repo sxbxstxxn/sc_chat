@@ -33,36 +33,10 @@ class ChatController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function chatAction()
     {
-        $pluginUsergroups = $this->settings['usergroups'];
-        $pluginUserPIDs = $this->settings['userPIDs'];
-        $pluginUserStatus = $this->settings['userStatus'];
-
-        if ($pluginUsergroups == '') {
-            $queryStatement = 'SELECT * FROM fe_users WHERE pid IN ('.$pluginUserPIDs.')';
-        }
-        else {
-            $queryStatement = 'SELECT * FROM fe_users WHERE pid IN ('.$pluginUserPIDs.') AND usergroup IN ('.$pluginUsergroups.')';
-        }
-
-        $query = $this->feRepository->createQuery();
-        $query->statement($queryStatement);
-        $allUsers = $query->execute(TRUE);
-
-        $time = time();
-
-        foreach ($allUsers as $user) {
-            if ((($time - $user['is_online']) < 600) && ($user['is_online'] > 0)) {
-                $user['onlinestatus'] = 'online';
-            }
-            else {
-                $user['onlinestatus'] = 'offline';
-            }
-            $allUsersNew[]=$user;
-        }
-
         $this->view->assignMultiple([
-            'users' => $allUsersNew,
-            'showUserStatus' => $pluginUserStatus
+            'test' => $GLOBALS['TSFE']->fe_user->user['username'],
+            'testtest' => $GLOBALS['TSFE']->fe_user->user
         ]);
     }
+
 }

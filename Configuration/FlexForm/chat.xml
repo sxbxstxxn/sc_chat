@@ -10,14 +10,6 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
-                    <settings.userStatus>
-                        <TCEforms>
-                            <label>LLL:EXT:sc_chat/Resources/Private/Language/locallang_be.xlf:plugin.userstatus</label>
-                            <config>
-                                <type>check</type>
-                            </config>
-                        </TCEforms>
-                    </settings.userStatus>
                     <settings.usergroups>
                         <TCEforms>
                             <label>LLL:EXT:sc_chat/Resources/Private/Language/locallang_be.xlf:plugin.usergroups</label>
