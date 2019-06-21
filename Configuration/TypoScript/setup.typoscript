@@ -1,15 +1,15 @@
 
-plugin.tx_sc_feuserlist {
+plugin.tx_sc_chat {
     view {
-        templateRootPaths.0 = EXT:sc_feuserlist/Resources/Private/Templates/
-        templateRootPaths.1 = {$plugin.tx_sc_feuserlist.view.templateRootPath}
-        partialRootPaths.0 = EXT:sc_feuserlist/Resources/Private/Partials/
-        partialRootPaths.1 = {$plugin.tx_sc_feuserlist.view.partialRootPath}
-        layoutRootPaths.0 = EXT:sc_feuserlist/Resources/Private/Layouts/
-        layoutRootPaths.1 = {$plugin.tx_sc_feuserlist.view.layoutRootPath}
+        templateRootPaths.0 = EXT:sc_chat/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_sc_chat.view.templateRootPath}
+        partialRootPaths.0 = EXT:sc_chat/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_sc_chat.view.partialRootPath}
+        layoutRootPaths.0 = EXT:sc_chat/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_sc_chat.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_sc_feuserlist.persistence.storagePid}
+        storagePid = {$plugin.tx_sc_chat.persistence.storagePid}
         #recursive = 1
     }
     features {
@@ -25,7 +25,7 @@ plugin.tx_sc_feuserlist {
 }
 
 # these classes are only used in auto-generated templates
-plugin.tx_sc_feuserlist._CSS_DEFAULT_STYLE (
+plugin.tx_sc_chat._CSS_DEFAULT_STYLE (
     textarea.f3-form-error {
         background-color:#FF9F9F;
         border: 1px #FF0000 solid;

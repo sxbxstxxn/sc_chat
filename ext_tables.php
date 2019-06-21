@@ -6,12 +6,12 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'SebastianChristoph.sc_feuserlist',
-            'feuserlist',
-            'Frontend Userliste'
+            'SebastianChristoph.sc_chat',
+            'chat',
+            'Chat'
         );
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('sc_feuserlist', 'Configuration/TypoScript', 'SCFrontendUserlist');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('sc_chat', 'Configuration/TypoScript', 'SCChat');
 
     }
 );

@@ -6,10 +6,10 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'SebastianChristoph.sc_feuserlist',
-            'feuserlist',
+            'SebastianChristoph.sc_chat',
+            'chat',
             [
-                'Userlist' => 'list'
+                'chat' => 'chat'
             ],
             // non-cacheable actions
             [
@@ -22,13 +22,13 @@ call_user_func(
         'mod {
             wizards.newContentElement.wizardItems.plugins {
                 elements {
-                    feuserlist {
-                        iconIdentifier = sc_feuserlist-plugin-feuserlist
-                        title = LLL:EXT:sc_feuserlist/Resources/Private/Language/locallang_db.xlf:tx_sc_feuserlist_feuserlist.name
-                        description = LLL:EXT:sc_feuserlist/Resources/Private/Language/locallang_db.xlf:tx_sc_feuserlist_feuserlist.description
+                    chat {
+                        iconIdentifier = sc_chat-plugin-feuserlist
+                        title = LLL:EXT:sc_chat/Resources/Private/Language/locallang_db.xlf:tx_sc_chat_chat.name
+                        description = LLL:EXT:sc_chat/Resources/Private/Language/locallang_db.xlf:tx_sc_chat_chat.description
                         tt_content_defValues {
                             CType = list
-                            list_type = scfeuserlist_feuserlist
+                            list_type = scchat_chat
                         }
                     }
                 }
@@ -39,9 +39,9 @@ call_user_func(
 		$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 		
 			$iconRegistry->registerIcon(
-				'sc_feuserlist-plugin-feuserlist',
+				'sc_chat-plugin-chat',
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:sc_feuserlist/Resources/Public/Icons/user_plugin_feuserlist.svg']
+				['source' => 'EXT:sc_chat/Resources/Public/Icons/user_plugin_chat.svg']
 			);
 		
     }

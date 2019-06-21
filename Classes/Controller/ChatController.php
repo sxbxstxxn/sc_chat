@@ -1,13 +1,13 @@
 <?php
-namespace SebastianChristoph\ScFeuserlist\Controller;
+namespace SebastianChristoph\ScChat\Controller;
 
 
 /**
- * Class UserlistController
+ * Class ChatController
  *
- * * @package SebastianChristoph\ScFeuserlist\Controller
+ * * @package SebastianChristoph\ScChat\Controller
  */
-class UserlistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class ChatController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
 
     /**

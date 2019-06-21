@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'SC FrontendUserlist',
-    'description' => 'Creates a userlist of frontendusers in the frontend with online status',
+    'title' => 'SC Chat',
+    'description' => 'Creates a very simple chat for frontend users in typo3',
     'category' => 'plugin',
     'author' => 'Sebastian Christoph',
     'author_email' => 'admin@sebastian-christoph.de',
