@@ -4,6 +4,10 @@
     <f:security.ifAuthenticated>
         <f:then>
             whoami:{test}<br/>
+            <f:form action="chat">
+                <f:form.textfield name="myTextBox" value="default value" />
+                <f:form.button class="btn" type="submit">Submit</f:form.button>
+            </f:form>
         </f:then>
         <f:else>
             <f:render partial="accessError"/>

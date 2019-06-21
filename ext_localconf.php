@@ -9,7 +9,7 @@ call_user_func(
             'SebastianChristoph.sc_chat',
             'chat',
             [
-                'Chat' => 'chat'
+                'Chat' => 'chat, sendmessage'
             ],
             // non-cacheable actions
             [

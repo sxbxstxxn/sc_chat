@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-03T23:20:27Z" product-name="sc_chat">
+		<header/>
+		<body>
+			<trans-unit id="tx_sc_chat_chat.name">
+				<source>Chat</source>
+			</trans-unit>
+			<trans-unit id="tx_sc_chat_chat.description">
+				<source>Creates a very simple chat for frontend users in typo3</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

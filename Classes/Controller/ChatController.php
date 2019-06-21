@@ -33,10 +33,15 @@ class ChatController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function chatAction()
     {
+        var_dump($_POST);
         $this->view->assignMultiple([
             'test' => $GLOBALS['TSFE']->fe_user->user['username'],
             'testtest' => $GLOBALS['TSFE']->fe_user->user
         ]);
     }
 
+    public function sendmessageAction()
+    {
+
+    }
 }
